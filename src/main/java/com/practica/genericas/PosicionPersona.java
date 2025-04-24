@@ -23,6 +23,7 @@ public class PosicionPersona {
 	public void setFechaPosicion(FechaHora fechaPosicion) {
 		this.fechaPosicion = fechaPosicion;
 	}
+	
 	@Override
 	public String toString() {
 		String cadena = "";
@@ -36,7 +37,6 @@ public class PosicionPersona {
 	        		fecha.getHora().getMinuto());
         cadena+=String.format("%.4f;%.4f\n", getCoordenada().getLatitud(), 
 	        		getCoordenada().getLongitud());
-	
 		return cadena;
 	}
 		

@@ -1,13 +1,10 @@
 package com.practica.genericas;
 
-
 public class Coordenada {
 	private float latitud, longitud;
-
 	
 	public Coordenada() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Coordenada(float latitud, float longitud) {
@@ -45,14 +42,10 @@ public class Coordenada {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
+		if (obj == null || getClass() != obj.getClass())
 			return false;
 		Coordenada other = (Coordenada) obj;
-		if (Float.floatToIntBits(latitud) != Float.floatToIntBits(other.latitud))
-			return false;
-		if (Float.floatToIntBits(longitud) != Float.floatToIntBits(other.longitud))
+		if (Float.floatToIntBits(latitud) != Float.floatToIntBits(other.latitud) || Float.floatToIntBits(longitud) != Float.floatToIntBits(other.longitud))
 			return false;
 		return true;
 	}

@@ -80,16 +80,11 @@ public class Persona {
 	public String toString() {
 		FechaHora fecha = getFechaNacimiento();
 		String cadena = "";
-		// Documento
 		cadena += String.format("%s;", getDocumento());
-		// Nombre y apellidos
 		cadena += String.format("%s,%s;", getApellidos(), getNombre());
-		// correo electrónico
 		cadena += String.format("%s;", getEmail());
-        // Direccion y código postal
 		cadena += String.format("%s,%s;", getDireccion(), getCp());
-        // Fecha de nacimiento
-		cadena+=String.format("%02d/%02d/%04d\n", fecha.getFecha().getDia(), 
+		cadena += String.format("%02d/%02d/%04d\n", fecha.getFecha().getDia(), 
         		fecha.getFecha().getMes(), 
         		fecha.getFecha().getAnio());
 
