@@ -84,7 +84,7 @@ public class Persona {
 		cadena += String.format("%s,%s;", getApellidos(), getNombre());
 		cadena += String.format("%s;", getEmail());
 		cadena += String.format("%s,%s;", getDireccion(), getCp());
-		cadena += String.format("%02d/%02d/%04d\n", fecha.getFecha().getDia(), 
+		cadena+=String.format("%02d/%02d/%04d\n", fecha.getFecha().getDia(), 
         		fecha.getFecha().getMes(), 
         		fecha.getFecha().getAnio());
 
